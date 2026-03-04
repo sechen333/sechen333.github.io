@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Serena Chen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e2e8f0; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .neon-text { color: #00F2FF; text-shadow: 0 0 15px rgba(0, 242, 255, 0.4); }
+        .gradient-bg { background: radial-gradient(circle at top right, #0f172a, #050505); }
+    </style>
+</head>
+<body class="gradient-bg">
+
+    <nav class="fixed w-full z-50 px-8 py-6 glass flex justify-between items-center">
+        <div class="font-extrabold text-2xl tracking-tighter uppercase"><a href="index.html">Serena <span class="neon-text">Chen</span></a></div>
+        <div class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-[0.2em] text-slate-400 items-center">
+            <a href="about.html" class="hover:text-cyan-400 transition">About</a>
+            <a href="experience.html" class="text-cyan-400 transition">Experience</a>
+            <a href="credentials.html" class="hover:text-cyan-400 transition">Credentials</a>
+            <a href="contact.html" class="hover:text-cyan-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-10 md:px-32 max-w-6xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-12 uppercase">Professional <span class="neon-text">Trajectory</span></h1>
+
+        <div class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-lg bg-white overflow-hidden p-1">
+                    <img src="https://s3-symbol-logo.tradingview.com/aurora-innovation--600.png" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">Aurora</h2>
+                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Sr. Technical Product & Program Manager | 2025 - Present</p>
+                </div>
+            </div>
+            <ul class="space-y-4 text-slate-400 text-sm leading-relaxed">
+                <li>• Establishing the Platform Governance Model for the end-to-end "Software Factory," orchestrating strategy for infrastructure solutions across a $50M+ portfolio.</li>
+                <li>• Managing cross-functional alignment for system health and 100% security compliance (Secure Boot, IPSec).</li>
+                <li>• Reduced deployment latency by 20% by defining engineering roadmaps for platform release tooling.</li>
+            </ul>
+        </div>
+
+        <div class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-lg bg-white overflow-hidden">
+                    <img src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/3/2019/11/Consulting-Blog-Photo.jpg" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">McKinsey & Company</h2>
+                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Senior Associate | 2023 - 2025</p>
+                </div>
+            </div>
+            <ul class="space-y-4 text-slate-400 text-sm leading-relaxed">
+                <li>• Scaled AI-powered technical platform from $3.3M to $10M in revenue.</li>
+                <li>• Identified $80M in commercial impact for a leading tech partner through strategic product direction.</li>
+                <li>• Hosted a GenAI speaker series on SDLC impact, reaching 10K+ views per episode.</li>
+            </ul>
+        </div>
+
+        <div class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-lg bg-black overflow-hidden p-1 border border-white/10">
+                    <img src="https://logo.clearbit.com/nuro.ai" class="w-full h-full object-contain invert">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">Nuro</h2>
+                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Sr. Technical Program Manager | 2019 - 2023</p>
+                </div>
+            </div>
+            <ul class="space-y-4 text-slate-400 text-sm leading-relaxed">
+                <li>• Managed $40M platform investment and product roadmap for R3 autonomous vehicle scale.</li>
+                <li>• Founded a Center of Excellence (CoE), reducing operational overhead by 50%.</li>
+                <li>• Reduced unauthorized access incidents by 30% via technical provisioning system architecture.</li>
+            </ul>
+        </div>
+
+        <hr class="border-white/5 my-20">
+
+        <h3 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-12">Early Career & Impact</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-2xl border-l-2 border-slate-700">
+                <h4 class="font-bold mb-2">Deloitte</h4>
+                <p class="text-cyan-400 text-[10px] uppercase mb-4">Analyst / Internship</p>
+                <p class="text-xs text-slate-500 leading-relaxed">Early foundational experience in strategic advisory and systems analysis within enterprise technology landscapes.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl border-l-2 border-slate-700">
+                <h4 class="font-bold mb-2">Volunteer & NGO Work</h4>
+                <p class="text-cyan-400 text-[10px] uppercase mb-4">Strategic Contributor</p>
+                <p class="text-xs text-slate-500 leading-relaxed">Leveraging technical project management skills to support non-profit organizational growth and community impact initiatives.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 text-center border-t border-white/5 text-[10px] uppercase tracking-widest text-slate-600">
+        Serena Chen • Experience Subpage • Mountain View, CA
+    </footer>
+
+</body>
+</html>
