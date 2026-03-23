@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e2e8f0; scroll-behavior: smooth; }
+        .body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e2e8f0; scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .neon-text { color: #00F2FF; text-shadow: 0 0 15px rgba(0, 242, 255, 0.4); }
         .gradient-bg { background: radial-gradient(circle at top right, #0f172a, #050505); }
@@ -16,7 +16,7 @@
 <body class="gradient-bg">
 
 <nav class="fixed w-full z-50 px-8 py-6 glass flex justify-between items-center">
-    <div class="font-extrabold text-2xl tracking-tighter uppercase">
+    <div class="text-white font-extrabold text-2xl tracking-tighter uppercase">
         <a href="index.html">Serena <span class="neon-text">Chen</span></a>
     </div>
     <div class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-[0.2em] text-slate-400 items-center">
@@ -33,31 +33,34 @@
 
     <main class="pt-32 pb-20 px-10 md:px-32 max-w-4xl mx-auto">
         <section class="mb-20">
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-8 uppercase">The <span class="neon-text">Mission</span></h1>
-            <p class="text-xl text-slate-300 leading-relaxed mb-6 italic">
-                "Scaling autonomy to liberate human creativity."
+            <h1 class="text-white text-4xl md:text-6xl font-extrabold tracking-tighter leading-tight uppercase mb-10">
+                Bridging the gap between <br>
+                <span class="neon-text">Deep Tech</span> and <br>
+                Commercial <span class="text-white">Reality.</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl">
+                I thrive at the intersection of complex engineering and strategic growth. Whether it's managing a $50M+ autonomy portfolio at <span class="font-bold text-white">Aurora</span> or conducting GenAI research at <span class="font-bold text-white">McKinsey</span>, my goal is always the same: making the impossible, operational.
             </p>
-            <div class="text-slate-400 space-y-6 text-lg">
-                <p>
-                    I am a Technical Program and Product Manager driven by the intersection of robotics and human potential. My journey from Engineering to Strategic Leadership has been defined by a single goal: Scaling the adoption of robotics to free up human intellectual creation.
-                </p>
-                <p>
-                    Outside of the "Software Factory," I am an explorer of ideas. Whether it's through a deep-dive technical speaker series or mentoring early-career engineers, I believe in the power of shared knowledge to accelerate innovation.
-                </p>
-            </div>
+            <h3 class="text-xl md:text-2xl font-bold mb-6 italic text-white leading-relaxed">
+                "Efficiency is the engine, but vision is the steering wheel."
+            </h3>
+            <p class="text-slate-400 text-sm md:text-base leading-relaxed">
+                In the world of autonomous systems, technical debt is the silent killer. I build ecosystems that aren't just fast, but sustainable—ensuring every line of code serves a long-term commercial objective.
+            </p>
         </section>
 
         <section class="mb-20">
             <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-10">Academic Foundation</h2>
             <div class="space-y-6">
                 <div class="glass p-8 rounded-2xl border-l-2 border-cyan-500">
-                    <h3 class="text-xl font-bold">Washington University in St. Louis</h3>
+                    <h3 class="text-white text-xl font-bold">Washington University in St. Louis</h3>
                     <p class="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Master of Science (STEM)</p>
-                    <p class="text-slate-500 text-sm mt-2">Specialization in Supply Chain & Operational Strategy</p>
+                    <p class="text-slate-500 text-sm mt-2">Supply Chain Management</p>
                 </div>
                 <div class="glass p-8 rounded-2xl border-l-2 border-slate-700">
-                    <h3 class="text-xl font-bold">Zhejiang University of Science and Technology</h3>
+                    <h3 class="text-white text-xl font-bold">Zhejiang University of Science and Technology</h3>
                     <p class="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Bachelor of Engineering (STEM)</p>
+                    <p class="text-slate-500 text-sm mt-2">Industrial Engineering, Dean's List</p>
                 </div>
             </div>
         </section>
