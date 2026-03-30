@@ -10,6 +10,9 @@
         body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e2e8f0; }
         .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .neon-text { color: #00F2FF; text-shadow: 0 0 15px rgba(0, 242, 255, 0.4); }
+        .card-hover { transition: all 0.4s ease; }
+        .card-hover:hover { border-color: rgba(0, 242, 255, 0.5); transform: translateY(-8px); box-shadow: 0 12px 32px rgba(0, 242, 255, 0.08); }
+        .tag { border: 1px solid rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 9999px; text-transform: uppercase; font-size: 10px; letter-spacing: 0.05em; }
     </style>
 </head>
 <body class="bg-[#050505]">
@@ -32,19 +35,19 @@
 
     <main class="pt-36 pb-20 px-10 md:px-32 max-w-6xl mx-auto">
         <section class="mb-20">
+            <p class="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mb-4">Technical Leader | Autonomy & AI</p>
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-none uppercase mb-10">
-                Bridging the gap between <br>
-                <span class="neon-text">AI Technology</span> and <br>
-                Commercial <span class="text-white">Reality.</span>
+                Bridging <span class="neon-text">Deep Tech</span><br>
+                and Business <span class="text-white">Impact.</span>
             </h1>
-            <p class="text-slate-400 text-lg leading-relaxed max-w-2xl mb-6">
-                I thrive at the intersection of complex engineering and strategic growth. Whether it's managing a $50M+ autonomy portfolio at <span class="font-bold text-white">Aurora</span> or conducting GenAI research at <span class="font-bold text-white">McKinsey</span>, my goal is always the same: making the impossible, operational.
+            <p class="text-slate-400 text-base leading-relaxed max-w-2xl mb-6">
+                I thrive where engineering complexity meets commercial reality. Whether steering a $50M+ autonomy portfolio at <span class="font-bold text-white">Aurora</span> or scaling an ADAS product to $10M in revenue at <span class="font-bold text-white">McKinsey</span>, I transform ambitious technical programs into products that ship on time, scale reliably, and drive measurable business results.
             </p>
-            <p class="text-lg font-light italic border-l-2 border-cyan-500/50 pl-6 text-slate-300 mb-6">
-                "Efficiency is the engine, but vision is the steering wheel."
+            <p class="text-lg md:text-xl font-light italic border-l-2 border-cyan-500/50 pl-6 text-slate-300 mb-6">
+                "The hardest problems aren't technical — they're organizational. I solve both."
             </p>
-            <p class="text-slate-400 text-sm leading-relaxed max-w-2xl">
-                In the world of autonomous systems, technical debt is the silent killer. I build ecosystems that aren't just fast, but sustainable—ensuring every line of code serves a long-term commercial objective.
+            <p class="text-slate-400 text-base leading-relaxed max-w-2xl">
+                In autonomous systems, the distance between prototype and production is where most programs stall. I build the cross-functional alignment, governance frameworks, and operational rigor that close that gap — consistently, at scale.
             </p>
         </section>
 
@@ -64,6 +67,131 @@
             </div>
         </section>
 
+        <section class="mb-20">
+            <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-12">Speaking & Publications</h2>
+            <div class="space-y-8">
+
+                <!-- WAT Fireside Chat: Difficult Conversations -->
+                <a href="https://www.linkedin.com/posts/serenachen575104_difficultconversations-panel-discussion-activity-7303912637250088960-ulay" target="_blank" class="glass p-8 rounded-3xl card-hover border-l-4 border-cyan-500 flex flex-col md:flex-row gap-6 md:gap-8 block group">
+                    <div class="md:w-1/3 shrink-0 rounded-2xl overflow-hidden">
+                        <img src="https://media.licdn.com/dms/image/v2/D5622AQH45qFvP5MK9w/feedshare-shrink_800/B56ZVyDusNGsAg-/0/1741375336915?e=2147483647&v=beta&t=1ApR1Ro-_dwYLy-3ZCVBf3syvo8q9w4F7WfqUHUnI2o" alt="WAT Difficult Conversations Panel" class="w-full h-48 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-cyan-400">Fireside Chat</span>
+                            <span class="tag text-slate-500">Women in Automotive Technology</span>
+                            <span class="tag text-slate-500">2025</span>
+                        </div>
+                        <h3 class="text-white text-xl font-bold mb-2">Difficult Conversations — Vehicle Automation Levels</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-3">Hosted an all-women panelist fireside chat with leaders from the autonomous vehicle industry on adopting different levels of automation to create a better world. Panelists included Divya G., Frankie James, Lauren Kwan, and Sara Rayburn.</p>
+                        <p class="text-xs text-slate-500 italic border-l border-cyan-500/30 pl-4 mb-3">"I cannot remember when was the last time I walked into a panel where there were only women panelists."<span class="not-italic text-slate-600"> — Audience member</span></p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-slate-400">#vehicleautomation</span>
+                            <span class="tag text-slate-400">#difficultconversations</span>
+                        </div>
+                        <span class="neon-text text-xs font-bold uppercase tracking-widest group-hover:underline">View on LinkedIn &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Deloitte Publication -->
+                <a href="https://www.deloitte.com/global/en/services/consulting/perspectives/the-kinetic-enterprise-digital-enablers.html" target="_blank" class="glass p-8 rounded-3xl card-hover border-l-4 border-cyan-500 flex flex-col md:flex-row gap-6 md:gap-8 block group">
+                    <div class="md:w-1/3 shrink-0 rounded-2xl overflow-hidden">
+                        <img src="https://www2.deloitte.com/content/dam/insights/articles/us175897_consulting_the-kinetic-enterprise/figures/us175897_consulting_the-kinetic-enterprise_promo.jpg" alt="The Kinetic Enterprise" class="w-full h-48 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-cyan-400">Publication</span>
+                            <span class="tag text-slate-500">Deloitte Consulting</span>
+                        </div>
+                        <h3 class="text-white text-xl font-bold mb-2">The Kinetic Enterprise: Digital Enablers</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-3">Featured analyst discussing digital transformation strategy — how integrating cloud, AI, and machine learning creates adaptive enterprises. Emphasized ecosystem thinking: <span class="italic text-slate-300">"One plus one will sometimes equal more than two."</span></p>
+                        <span class="neon-text text-xs font-bold uppercase tracking-widest group-hover:underline">Read on Deloitte.com &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- McKinsey Podcast: Pali Bhat -->
+                <a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/pali-bhat-on-building-intelligent-products" target="_blank" class="glass p-8 rounded-3xl card-hover border-l-4 border-slate-700 flex flex-col md:flex-row gap-6 md:gap-8 block group">
+                    <div class="md:w-1/3 shrink-0 rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-900/20 to-slate-900 flex items-center justify-center h-48">
+                        <div class="text-center px-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-cyan-400 opacity-60" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
+                            <span class="text-[10px] uppercase tracking-widest text-slate-500">McKinsey Podcast</span>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-cyan-400">Podcast</span>
+                            <span class="tag text-slate-500">McKinsey & Company</span>
+                        </div>
+                        <h3 class="text-white text-xl font-bold mb-2">Pali Bhat on Building Intelligent Products</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-3">Supported the production of this McKinsey Technology podcast featuring Pali Bhat, former Chief Product Officer at Google, discussing how AI is reshaping product development and what it takes to build truly intelligent products at scale.</p>
+                        <span class="neon-text text-xs font-bold uppercase tracking-widest group-hover:underline">Listen on McKinsey.com &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- McKinsey Podcast: Gokul Rajaram -->
+                <a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/gokul-rajaram-on-product-thinking-and-the-future-of-innovation" target="_blank" class="glass p-8 rounded-3xl card-hover border-l-4 border-slate-700 flex flex-col md:flex-row gap-6 md:gap-8 block group">
+                    <div class="md:w-1/3 shrink-0 rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-900/20 to-slate-900 flex items-center justify-center h-48">
+                        <div class="text-center px-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-cyan-400 opacity-60" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
+                            <span class="text-[10px] uppercase tracking-widest text-slate-500">McKinsey Podcast</span>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-cyan-400">Podcast</span>
+                            <span class="tag text-slate-500">McKinsey & Company</span>
+                        </div>
+                        <h3 class="text-white text-xl font-bold mb-2">Gokul Rajaram on Product Thinking & the Future of Innovation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-3">Supported the production of this McKinsey Technology podcast featuring Gokul Rajaram, board member at leading tech companies, on product thinking frameworks and how innovation leadership is evolving in the age of AI.</p>
+                        <span class="neon-text text-xs font-bold uppercase tracking-widest group-hover:underline">Listen on McKinsey.com &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- DistribuTech Conference -->
+                <a href="https://www.linkedin.com/posts/serenachen575104_distributech-deloitte-cloud-activity-6629052117317414912-yXkd" target="_blank" class="glass p-8 rounded-3xl card-hover border-l-4 border-slate-700 flex flex-col md:flex-row gap-6 md:gap-8 block group">
+                    <div class="md:w-1/3 shrink-0 rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="DistribuTech Conference" class="w-full h-48 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-cyan-400">Conference</span>
+                            <span class="tag text-slate-500">San Antonio</span>
+                        </div>
+                        <h3 class="text-white text-xl font-bold mb-2">DistribuTech 2020 — AWS x Deloitte</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-3">Presented cloud solutions for the utility and power industry at the AWS booth during the nation's largest annual grid technology trade show. Engaged with global attendees on enterprise cloud migration strategies.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-slate-400">#distributech</span>
+                            <span class="tag text-slate-400">#cloud</span>
+                            <span class="tag text-slate-400">#deloitte</span>
+                        </div>
+                        <span class="neon-text text-xs font-bold uppercase tracking-widest group-hover:underline">View on LinkedIn &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- WIM 2020 Panel -->
+                <a href="https://www.linkedin.com/posts/serenachen575104_innovation-entrepreneurs-investors-activity-6742049143021219840-b2nK" target="_blank" class="glass p-8 rounded-3xl card-hover border-l-4 border-slate-700 flex flex-col md:flex-row gap-6 md:gap-8 block group">
+                    <div class="md:w-1/3 shrink-0 rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80" alt="WIM 2020 Panel" class="w-full h-48 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-cyan-400">Panel</span>
+                            <span class="tag text-slate-500">WIM 2020</span>
+                        </div>
+                        <h3 class="text-white text-xl font-bold mb-2">Women in Motion — Innovation Trends in China</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-3">Panelist alongside accelerator founders and startup leaders discussing innovation trends in China's market and opportunities for global investors and entrepreneurs at the WIM North America Chapter.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag text-slate-400">#innovation</span>
+                            <span class="tag text-slate-400">#startup</span>
+                            <span class="tag text-slate-400">#WIM2020</span>
+                        </div>
+                        <span class="neon-text text-xs font-bold uppercase tracking-widest group-hover:underline">View on LinkedIn &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
         <section>
             <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-12">Influence</h2>
             <div class="grid grid-cols-1 gap-8">
@@ -73,14 +201,24 @@
                         <li>• The Age of AI - Henry Kissinger</li>
                         <li>• Thinking, Fast and Slow - Daniel Kahneman</li>
                         <li>• High Output Management - Andrew Grove</li>
+                        <li>• The Goal: A Process of Ongoing Improvement - Eliyahu M. Goldratt</li>
                     </ul>
                 </div>
                 <div class="glass p-8 rounded-3xl">
                     <h4 class="text-cyan-400 text-sm font-bold uppercase mb-4">Cinema</h4>
-                    <ul class="text-sm text-slate-400 space-y-2">
-                        <li>• Interstellar (The scale of human ambition)</li>
-                        <li>• Ex Machina (The ethics of autonomy)</li>
-                        <li>• Moneyball (The power of data-driven decisions)</li>
+                    <ul class="text-sm text-slate-400 space-y-4">
+                        <li>
+                            <span class="text-white font-semibold">Interstellar</span> — The scale of human ambition
+                            <p class="text-xs text-slate-500 italic mt-1 pl-4 border-l border-cyan-500/30">"We used to look up at the sky and wonder at our place in the stars. Now we just look down and worry about our place in the dirt."</p>
+                        </li>
+                        <li>
+                            <span class="text-white font-semibold">Ex Machina</span> — The ethics of autonomy
+                            <p class="text-xs text-slate-500 italic mt-1 pl-4 border-l border-cyan-500/30">"One day the AIs are going to look back on us the same way we look at fossil skeletons on the plains of Africa."</p>
+                        </li>
+                        <li>
+                            <span class="text-white font-semibold">Moneyball</span> — The power of data-driven decisions
+                            <p class="text-xs text-slate-500 italic mt-1 pl-4 border-l border-cyan-500/30">"The first one through the wall always gets bloody. Always."</p>
+                        </li>
                     </ul>
                 </div>
             </div>
