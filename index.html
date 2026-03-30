@@ -8,25 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        /* 1. ENABLE SCROLL SNAPPING ON BODY */
         html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
         body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e2e8f0; overflow-x: hidden; }
-        
-        /* 2. DEFINE SNAP SECTIONS */
-        section { 
-            scroll-snap-align: start; 
-            scroll-snap-stop: always; 
-            min-height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
+
+        section {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             position: relative;
         }
 
         .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .neon-text { color: #00F2FF; text-shadow: 0 0 15px rgba(0, 242, 255, 0.4); }
-        
-        /* Section Dividers */
+
         .section-divider {
             position: absolute;
             bottom: 0;
@@ -37,11 +34,14 @@
             pointer-events: none;
         }
 
-        .card-hover:hover { 
-            border-color: rgba(0, 242, 255, 0.5); 
-            transform: translateY(-8px); 
-            transition: all 0.4s ease;
+        .card-hover { transition: all 0.4s ease; }
+        .card-hover:hover {
+            border-color: rgba(0, 242, 255, 0.5);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 242, 255, 0.08);
         }
+
+        .tag { border: 1px solid rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 9999px; text-transform: uppercase; font-size: 10px; letter-spacing: 0.05em; }
     </style>
 </head>
 <body class="bg-[#050505]">
@@ -62,151 +62,241 @@
         </div>
     </nav>
 
-<section id="hero" class="px-10 md:px-32 flex flex-col md:flex-row items-center justify-center gap-16">
-    <div class="md:w-3/5 z-10" data-aos="fade-right">
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-none">
-            SCALING <span class="neon-text">AUTONOMY.</span><br>LIBERATING CREATIVITY.
-        </h1>
-        
-        <div class="max-w-2xl text-slate-300 leading-relaxed mb-10 space-y-4">
-            <p class="text-lg md:text-xl font-light italic border-l-2 border-cyan-500/50 pl-6">
-                "I am deeply committed to creating a long-lasting impact for human society through two core missions:"
-            </p>
-            <ul class="space-y-4 text-sm md:text-base text-slate-400">
-                <li class="flex gap-4">
-                    <span class="neon-text font-bold">01</span>
-                    <span>Building truly meaningful products that push human intellectual boundaries and free up intellectual capacity.</span>
-                </li>
-                <li class="flex gap-4">
-                    <span class="neon-text font-bold">02</span>
-                    <span>Growing and empowering people around me so they can find a higher purpose in life through work.</span>
-                </li>
-            </ul>
-        </div>
+    <!-- HERO -->
+    <section id="hero" class="px-10 md:px-32">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-16">
+        <div class="md:w-3/5 z-10" data-aos="fade-right">
+            <p class="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mb-4">Technical Product & Program Manager | 8+ Years in Autonomous Driving & AI</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-none">
+                SCALING <span class="neon-text">AUTONOMY.</span><br>LIBERATING CREATIVITY.
+            </h1>
 
-        <div class="flex items-center gap-8 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition duration-700">
-            <img src="https://ir.aurora.tech/_assets/_853ecd3da13ea8e972ccf099eef38dc7/aurora/db/982/9423/image.svg" alt="Aurora" class="h-5">
-            <img src="https://companieslogo.com/img/orig/mckinsey.D-f33efabe.png?t=1720244494" alt="McKinsey" class="h-4">
-            <img src="https://ml.globenewswire.com/Resource/Download/6e511179-2459-4b4c-819d-02e155666f1d" alt="Nuro" class="h-8">
-            <img src="https://logos-world.net/wp-content/uploads/2021/08/Deloitte-Logo.png" alt="Deloitte" class="h-8">
-        </div>
-    </div>
-
-    <div class="md:w-2/5 flex justify-center relative group" data-aos="zoom-in">
-        <div class="absolute -inset-4 bg-cyan-500/10 rounded-full blur-3xl animate-pulse group-hover:bg-cyan-500/30 transition duration-700"></div>
-        <img src="https://lh3.googleusercontent.com/pw/AP1GczPq9-o-OoKPu7Rpj3CZd_vUM0IWUVkwD1GfwyMBq_9SbuPH0L7So5NYMj90XPoAU4FU6FJzOweZseguARvre7LzrsCaPqBcbnsr3txElPnSOYucjzFH=w2400" 
-             alt="Serena Chen" 
-             class="relative rounded-2xl w-64 h-64 md:w-80 md:h-80 object-cover glass border border-white/10 shadow-2xl z-10 transition-transform duration-500 group-hover:scale-[1.03] group-hover:border-cyan-500/50">
-    </div>
-    
-    <div class="section-divider"></div>
-</section>
-
-    <section id="skills" class="px-10 md:px-32 bg-white/[0.01]">
-        <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-16" data-aos="fade-right">The Toolkit</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass p-10 rounded-3xl card-hover" data-aos="zoom-in" data-aos-delay="100">
-                <h4 class="text-cyan-400 text-sm font-bold uppercase mb-6">Infrastructure</h4>
-                <div class="flex flex-wrap gap-2 text-[10px] text-slate-400">
-                    <span class="border border-white/10 px-3 py-1 rounded-full uppercase">Cloud Architecture</span>
-                    <span class="border border-white/10 px-3 py-1 rounded-full uppercase">Secure Boot</span>
-                </div>
+            <div class="max-w-2xl text-slate-300 leading-relaxed mb-10 space-y-4">
+                <p class="text-lg md:text-xl font-light italic border-l-2 border-cyan-500/50 pl-6">
+                    "I am deeply committed to creating a long-lasting impact for human society through two core missions:"
+                </p>
+                <ul class="space-y-4 text-sm md:text-base text-slate-400">
+                    <li class="flex gap-4">
+                        <span class="neon-text font-bold">01</span>
+                        <span>Building truly meaningful products that push human intellectual boundaries and free up intellectual capacity.</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="neon-text font-bold">02</span>
+                        <span>Growing and empowering people around me so they can find a higher purpose in life through work.</span>
+                    </li>
+                </ul>
             </div>
-            <div class="glass p-10 rounded-3xl card-hover" data-aos="zoom-in" data-aos-delay="200">
-                <h4 class="text-cyan-400 text-sm font-bold uppercase mb-6">Operations</h4>
-                <div class="flex flex-wrap gap-2 text-[10px] text-slate-400">
-                    <span class="border border-white/10 px-3 py-1 rounded-full uppercase">SDLC Governance</span>
-                    <span class="border border-white/10 px-3 py-1 rounded-full uppercase">Release Readiness</span>
-                </div>
-            </div>
-            <div class="glass p-10 rounded-3xl card-hover" data-aos="zoom-in" data-aos-delay="300">
-                <h4 class="text-cyan-400 text-sm font-bold uppercase mb-6">Leadership</h4>
-                <div class="flex flex-wrap gap-2 text-[10px] text-slate-400">
-                    <span class="border border-white/10 px-3 py-1 rounded-full uppercase">GenAI Strategy</span>
-                    <span class="border border-white/10 px-3 py-1 rounded-full uppercase">Data Modeling</span>
-                </div>
+
+            <div class="flex items-center gap-8 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition duration-700">
+                <img src="https://ir.aurora.tech/_assets/_853ecd3da13ea8e972ccf099eef38dc7/aurora/db/982/9423/image.svg" alt="Aurora" class="h-5">
+                <img src="https://companieslogo.com/img/orig/mckinsey.D-f33efabe.png?t=1720244494" alt="McKinsey" class="h-4">
+                <img src="https://ml.globenewswire.com/Resource/Download/6e511179-2459-4b4c-819d-02e155666f1d" alt="Nuro" class="h-8">
+                <img src="https://static.cdnlogo.com/logos/d/39/deloitte.png" alt="Deloitte" class="h-8">
             </div>
         </div>
+
+        <div class="md:w-2/5 flex justify-center relative group" data-aos="zoom-in">
+            <div class="absolute -inset-4 bg-cyan-500/10 rounded-full blur-3xl animate-pulse group-hover:bg-cyan-500/30 transition duration-700"></div>
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczPq9-o-OoKPu7Rpj3CZd_vUM0IWUVkwD1GfwyMBq_9SbuPH0L7So5NYMj90XPoAU4FU6FJzOweZseguARvre7LzrsCaPqBcbnsr3txElPnSOYucjzFH=w2400"
+                 alt="Serena Chen"
+                 class="relative rounded-2xl w-64 h-64 md:w-80 md:h-80 object-cover glass border border-white/10 shadow-2xl z-10 transition-transform duration-500 group-hover:scale-[1.03] group-hover:border-cyan-500/50">
+        </div>
+      </div>
+
         <div class="section-divider"></div>
     </section>
 
-    <section id="experience" class="px-10 md:px-32">
-        <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-16" data-aos="fade-right">Milestones</h2>
-        <div class="space-y-6 max-w-5xl">
-            <div class="glass p-8 rounded-3xl border-l-4 border-cyan-500 flex gap-8 items-center" data-aos="fade-left">
-                <div class="w-16 h-16 bg-white rounded-xl overflow-hidden shrink-0">
-                    <img src="https://s3-symbol-logo.tradingview.com/aurora-innovation--600.png" class="w-full h-full object-cover">
+    <!-- TOOLKIT -->
+    <section id="skills" class="px-10 md:px-32 bg-white/[0.01]">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-16" data-aos="fade-right">The Toolkit</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div class="glass p-10 rounded-3xl card-hover border-l-4 border-cyan-500" data-aos="zoom-in" data-aos-delay="100">
+                <div class="flex items-baseline gap-4 mb-4">
+                    <span class="text-4xl font-extrabold neon-text leading-none">8+</span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500">Years in Product & Program</span>
                 </div>
-                <div>
-                    <h3 class="text-2xl font-bold">Aurora</h3>
-                    <p class="text-slate-400 text-sm font-mono">Senior Technical Product and Program Manager</p>
-                </div>
-            </div>
-            <div class="glass p-8 rounded-3xl border-l-4 border-slate-700 flex gap-8 items-center" data-aos="fade-right">
-                <div class="w-16 h-16 bg-white rounded-xl overflow-hidden shrink-0">
-                    <img src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/3/2019/11/Consulting-Blog-Photo.jpg" class="w-full h-full object-cover scale-150">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold">McKinsey & Co.</h3>
-                    <p class="text-slate-400 text-sm font-mono">Senior Associate, Mckinsey Product Academy, GenAI Research</p>
-                </div>
-            </div>
-            <div class="glass p-8 rounded-3xl border-l-4 border-slate-700 flex gap-8 items-center" data-aos="fade-right">
-                <div class="w-16 h-16 bg-white rounded-xl overflow-hidden shrink-0">
-                    <img src="https://images.squarespace-cdn.com/content/v1/534763a5e4b0abec14418ad2/1527097843285-64I1062Q9V903S4AVWZZ/01.jpg?format=2500w" class="w-full h-full object-cover">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold">Nuro Inc.</h3>
-                    <p class="text-slate-400 text-sm font-mono">Senior Technical Program Manager, Integration</p>
+                <h4 class="text-white text-sm font-bold uppercase mb-2">Product Engineering TPM</h4>
+                <p class="text-slate-500 text-xs mb-5 leading-relaxed">End-to-end ownership from requirement definition to production launch across frontend, backend, and platform teams.</p>
+                <div class="flex flex-wrap gap-2 text-slate-400">
+                    <span class="tag">Launch Readiness</span>
+                    <span class="tag">Roadmap Execution</span>
+                    <span class="tag">Requirement Definition</span>
+                    <span class="tag">Cross-team Coordination</span>
+                    <span class="tag">Distributed Team Management</span>
+                    <span class="tag">Jira</span>
+                    <span class="tag">Confluence</span>
+                    <span class="tag">Slack</span>
                 </div>
             </div>
+
+            <div class="glass p-10 rounded-3xl card-hover border-l-4 border-slate-700" data-aos="zoom-in" data-aos-delay="200">
+                <div class="flex items-baseline gap-4 mb-4">
+                    <span class="text-4xl font-extrabold neon-text leading-none">3x</span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500">Cloud Certified Architect</span>
+                </div>
+                <h4 class="text-white text-sm font-bold uppercase mb-2">Technical Excellence</h4>
+                <p class="text-slate-500 text-xs mb-5 leading-relaxed">Deep expertise in autonomous vehicle system architecture, cloud infrastructure, and secure software delivery pipelines.</p>
+                <div class="flex flex-wrap gap-2 text-slate-400">
+                    <span class="tag">AV System Architecture</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">GCP</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">Secure Boot</span>
+                    <span class="tag">IPSec</span>
+                    <span class="tag">OTA Deployment</span>
+                    <span class="tag">NVIDIA Thor</span>
+                </div>
+            </div>
+
+            <div class="glass p-10 rounded-3xl card-hover border-l-4 border-slate-700" data-aos="zoom-in" data-aos-delay="300">
+                <div class="flex items-baseline gap-4 mb-4">
+                    <span class="text-4xl font-extrabold neon-text leading-none">$80M</span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500">Commercial Impact Identified</span>
+                </div>
+                <h4 class="text-white text-sm font-bold uppercase mb-2">Analytical Leadership</h4>
+                <p class="text-slate-500 text-xs mb-5 leading-relaxed">Data-driven decision making from GenAI strategy to operational forecasting, turning complex data into actionable roadmaps.</p>
+                <div class="flex flex-wrap gap-2 text-slate-400">
+                    <span class="tag">GenAI for SDLC</span>
+                    <span class="tag">Data Modeling</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Tableau</span>
+                    <span class="tag">KPI Design</span>
+                    <span class="tag">Operational Forecasting</span>
+                    <span class="tag">Strategic Planning</span>
+                </div>
+            </div>
+
+            <div class="glass p-10 rounded-3xl card-hover border-l-4 border-slate-700" data-aos="zoom-in" data-aos-delay="400">
+                <div class="flex items-baseline gap-4 mb-4">
+                    <span class="text-4xl font-extrabold neon-text leading-none">50+</span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500">Engineers Led Cross-functionally</span>
+                </div>
+                <h4 class="text-white text-sm font-bold uppercase mb-2">Cross-functional Leadership</h4>
+                <p class="text-slate-500 text-xs mb-5 leading-relaxed">Aligning engineering, product, and external partners in matrixed organizations to deliver GTM-ready products at scale.</p>
+                <div class="flex flex-wrap gap-2 text-slate-400">
+                    <span class="tag">Engineering Alignment</span>
+                    <span class="tag">Product Strategy</span>
+                    <span class="tag">GTM Readiness</span>
+                    <span class="tag">Stakeholder Influence</span>
+                    <span class="tag">Agile / Scrum</span>
+                    <span class="tag">CoE Frameworks</span>
+                </div>
+            </div>
+
         </div>
+      </div>
+        <div class="section-divider"></div>
     </section>
 
-    <section id="contact" class="px-10 md:px-32 bg-white/[0.01]">
-        <div class="max-w-4xl w-full mx-auto text-center" data-aos="zoom-up">
-            <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-8">Contact</h2>
-            <div class="glass p-12 rounded-[3rem] border border-white/10 shadow-2xl relative">
-                <p class="text-slate-400 mb-10">Interested to be in touch?</p>
-                <form action="https://formspree.io/f/mqedrowj" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                    <input type="text" name="name" placeholder="Name" class="bg-white/5 border border-white/10 p-4 rounded-xl outline-none focus:border-cyan-500 transition">
-                    <input type="email" name="email" placeholder="Email" class="bg-white/5 border border-white/10 p-4 rounded-xl outline-none focus:border-cyan-500 transition">
-                    <textarea name="message" placeholder="Message" class="md:col-span-2 bg-white/5 border border-white/10 p-4 rounded-xl h-32 outline-none focus:border-cyan-500 transition"></textarea>
-                    <button type="submit" class="md:col-span-2 neon-text border border-cyan-500/30 p-4 rounded-xl font-bold uppercase tracking-widest hover:bg-cyan-500/10 transition">Send Message</button>
-                </form>
+    <!-- MILESTONES -->
+    <section id="experience" class="px-10 md:px-32">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-xs font-bold tracking-[0.5em] uppercase text-slate-500 mb-16" data-aos="fade-right">Milestones</h2>
+        <div class="space-y-6">
+            <div class="glass p-8 rounded-3xl border-l-4 border-cyan-500 flex flex-col md:flex-row gap-6 md:gap-8 md:items-center card-hover" data-aos="fade-left">
+                <div class="w-14 h-14 bg-white rounded-xl overflow-hidden shrink-0">
+                    <img src="https://s3-symbol-logo.tradingview.com/aurora-innovation--600.png" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold">Aurora</h3>
+                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Sr. Technical Product & Program Manager</p>
+                    <p class="text-slate-500 text-sm mt-2">Leading software integration for 3 OEM programs across 20+ engineers, achieving 99.9% platform reliability.</p>
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-slate-600 border border-white/10 px-3 py-1 rounded-full shrink-0 self-start md:self-center">2025 — Present</span>
+            </div>
+
+            <div class="glass p-8 rounded-3xl border-l-4 border-slate-700 flex flex-col md:flex-row gap-6 md:gap-8 md:items-center card-hover" data-aos="fade-right">
+                <div class="w-14 h-14 bg-white rounded-xl overflow-hidden shrink-0">
+                    <img src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/3/2019/11/Consulting-Blog-Photo.jpg" class="w-full h-full object-cover scale-150">
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold">McKinsey & Company</h3>
+                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Senior Associate, Software Product Development & GenAI Research</p>
+                    <p class="text-slate-500 text-sm mt-2">Scaled an ADAS platform from $3.3M to $10M in revenue and identified $80M in commercial impact.</p>
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-slate-600 border border-white/10 px-3 py-1 rounded-full shrink-0 self-start md:self-center">2023 — 2025</span>
+            </div>
+
+            <div class="glass p-8 rounded-3xl border-l-4 border-slate-700 flex flex-col md:flex-row gap-6 md:gap-8 md:items-center card-hover" data-aos="fade-left">
+                <div class="w-14 h-14 bg-white rounded-xl overflow-hidden shrink-0">
+                    <img src="https://images.squarespace-cdn.com/content/v1/534763a5e4b0abec14418ad2/1527097843285-64I1062Q9V903S4AVWZZ/01.jpg?format=2500w" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold">Nuro</h3>
+                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Sr. Technical Program Manager, Integration</p>
+                    <p class="text-slate-500 text-sm mt-2">Managed a $40M platform investment and founded the Center of Excellence, reducing operational overhead by 50%.</p>
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-slate-600 border border-white/10 px-3 py-1 rounded-full shrink-0 self-start md:self-center">2021 — 2023</span>
+            </div>
+
+            <div class="glass p-8 rounded-3xl border-l-4 border-slate-700 flex flex-col md:flex-row gap-6 md:gap-8 md:items-center card-hover" data-aos="fade-right">
+                <div class="w-14 h-14 bg-white rounded-xl overflow-hidden shrink-0">
+                    <img src="https://static.cdnlogo.com/logos/d/39/deloitte.png" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold">Deloitte Consulting</h3>
+                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest">ML Product Manager | Cloud Solution Architect</p>
+                    <p class="text-slate-500 text-sm mt-2">Led AI product development reducing operational costs by 50% and standardized operations across 8 countries.</p>
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-slate-600 border border-white/10 px-3 py-1 rounded-full shrink-0 self-start md:self-center">2018 — 2021</span>
             </div>
         </div>
+
+        <div class="mt-12 text-center" data-aos="fade-up">
+            <a href="experience.html" class="inline-block neon-text border border-cyan-500/30 px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-cyan-500/10 transition">View Full Experience</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="px-10 md:px-32 bg-white/[0.01]">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-3xl w-full mx-auto text-center" data-aos="zoom-up">
+            <h2 class="text-5xl md:text-6xl font-extrabold tracking-tighter mb-6 uppercase leading-none">
+                Let's Build <span class="neon-text">Together.</span>
+            </h2>
+            <p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto">
+                Interested in discussing autonomous systems, technical leadership, or strategic opportunities? I'd love to connect.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="https://www.linkedin.com/in/serenachen575104/" target="_blank" class="group inline-flex items-center gap-3 px-10 py-4 border border-cyan-500/30 rounded-full font-bold uppercase tracking-widest text-xs neon-text hover:bg-cyan-500/10 transition">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    Connect on LinkedIn
+                </a>
+                <a href="contact.html" class="inline-block px-10 py-4 border border-white/10 rounded-full font-bold uppercase tracking-widest text-xs text-slate-400 hover:text-cyan-400 hover:border-cyan-500/30 transition">
+                    Send a Message
+                </a>
+            </div>
+        </div>
+      </div>
     </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({ duration: 1000, once: false });</script>
-    
-    <footer class="px-10 md:px-32 py-20 bg-[#050505] border-t border-white/5">
+
+    <footer class="px-10 md:px-32 py-16 bg-[#050505] border-t border-white/5">
+      <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-center gap-10">
             <div class="text-left">
                 <h3 class="font-extrabold text-2xl tracking-tighter uppercase mb-2">
                     Serena <span class="neon-text">Chen</span>
                 </h3>
-                <p class="text-slate-500 text-xs tracking-widest uppercase">Building the Future Ways of Living</p>
-            </div>
-
-            <div class="flex flex-col items-center gap-4">
-                <a href="assets/Serena_Chen_Resume.pdf" target="_blank" 
-                   class="group relative px-8 py-4 bg-transparent border border-cyan-500/30 rounded-full font-bold uppercase tracking-[0.2em] text-xs hover:bg-cyan-500/10 transition-all duration-500 overflow-hidden">
-                    <div class="absolute inset-0 bg-cyan-500/20 scale-0 group-hover:scale-150 transition-transform duration-700 rounded-full"></div>
-                </a>
-                <span class="text-[10px] text-slate-600 uppercase tracking-widest">Available for strategic impact</span>
+                <p class="text-slate-500 text-xs tracking-widest uppercase">Building the Future of Autonomous Systems</p>
             </div>
 
             <div class="flex gap-6 text-slate-400 text-sm">
                 <a href="https://www.linkedin.com/in/serenachen575104/" target="_blank" class="hover:text-cyan-400 transition">LinkedIn</a>
                 <a href="mailto:serena.chen575104@gmail.com" class="hover:text-cyan-400 transition">Email</a>
+                <a href="contact.html" class="hover:text-cyan-400 transition">Contact</a>
             </div>
         </div>
-        
-        <div class="mt-20 text-center text-[10px] text-slate-700 uppercase tracking-[0.5em]">
-            &copy; 2026 Serena Chen — Accelerate Robotics
+
+        <div class="mt-12 text-center text-[10px] text-slate-700 uppercase tracking-[0.3em]">
+            &copy; 2026 Serena Chen
         </div>
+      </div>
     </footer>
 </body>
 </html>
